@@ -40,5 +40,20 @@ body,buttom, input, textarea{
     /* intervalo de tamanho responsivo (mínimo/padrão/máximo)*/
     font-size: clamp(14px, 1.6rem, 2vw);
 
-    font-family: ;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif;*/
+}
+
+
+/* Motor de busca do google, para esconder */
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;s
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: react(0, 0, 0 ,0);
+    white-space: nowrap;
+    border-width: 0;
 }
