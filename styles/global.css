@@ -1,0 +1,44 @@
+
+/*Zerando pré definições do navegador*/
+*{
+    margin:0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    --black: #0D114F;
+    --white:#FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF; 
+    --overlay:#040911;
+    --icons-details:#A5B0C1;
+
+    --grey-dark: #4D5E77;
+    --grey-blue:#A1B2CD;
+    --grey-light:#E5EAF1;
+
+   /*  fonte padrão da maioria dos navegadores vai ser 16 px 
+   1 rem =  16px, padrão do navegador [user agente]
+   toda vez que que colocar um texto em px, eu tenho que dividir ele pelo tamanho 
+   do meu navegador padrão, ou seja = 16. setando com 10, só divido por 10, ficando 
+   mais fácil, sempre subindo a vígula pra esquerda */
+    font-size: 62.5%; /* = 10 px */    
+}
+
+body{
+    /* dizendo que vai ser sempre a tela inteira,
+     do começa até o final, nunca quebra */
+    height: 100vh; 
+    background: var( --background);
+}
+
+body,buttom, input, textarea{
+    /* intervalo de tamanho responsivo (mínimo/padrão/máximo)*/
+    font-size: clamp(14px, 1.6rem, 2vw);
+
+    font-family: ;
+}
