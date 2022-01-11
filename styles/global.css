@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 html{
+
+    /* variáveis no css */
     --black: #0D114F;
     --white:#FAFAFA;
     --red: #E83F5B;
@@ -44,6 +46,11 @@ body,buttom, input, textarea{
     /* font-family: 'Poppins', sans-serif;*/
 }
 
+/* Conteúdo de todo o meu html englobado */
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Motor de busca do google, para esconder */
 .sr-only{
