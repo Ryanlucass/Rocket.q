@@ -1,4 +1,4 @@
-
+ 
 /*Zerando pré definições do navegador*/
 *{
     margin:0;
@@ -7,6 +7,8 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+/* declarando as variáveis para facilitação */
 html{
     --black: #0D114F;
     --white:#FAFAFA;
@@ -21,7 +23,7 @@ html{
     --grey-blue:#A1B2CD;
     --grey-light:#E5EAF1;
 
-   /*  fonte padrão da maioria dos navegadores vai ser 16 px 
+   /*  fonte padrão d a maioria dos navegadores vai ser 16 px 
    1 rem =  16px, padrão do navegador [user agente]
    toda vez que que colocar um texto em px, eu tenho que dividir ele pelo tamanho 
    do meu navegador padrão, ou seja = 16. setando com 10, só divido por 10, ficando 
@@ -36,12 +38,20 @@ body{
     background: var( --background);
 }
 
+
+
 body,buttom, input, textarea{
     /* intervalo de tamanho responsivo (mínimo/padrão/máximo)*/
     font-size: clamp(14px, 1.6rem, 2vw);
-
+    
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Poppins', sans-serif;*/
+}
+
+/* Para que colocar as cofigurações globais gravadas */
+.content{
+    width: 100%;
+    margin: 0 auto;
 }
 
 
