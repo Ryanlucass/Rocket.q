@@ -60,8 +60,39 @@ input, button, .button{
     border-radius: 0.8rem;
     height: 5rem;
 }
-
+/*criando a classe button */
 button, .button{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    /* espaçamento entre os textos */
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+
+    background: var(--blue);
+    color: var(--white );
+
+    cursor: pointer;
+    
+    transition: filter .4s;
+}
+
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+button > img
+.button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
 }

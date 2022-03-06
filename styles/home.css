@@ -3,29 +3,36 @@
      grid-template-columns: 60% 40%;
      grid-template-rows: 11.4rem 1fr;
  
+     /* quem vai ocupar cada quadrante */
+     /* temos 4 quadrantes, 
+     de acordo com a imagem, ela 
+     fala quem é quem  */
      grid-template-areas: 
      'header header'
      'left right'
  }
- 
+ /* quem ele é no grid-template-area?: 
+ ele é o header */
  header{
      grid-area: header;
  }
- 
+ /* quem ele é no grid-template-area?:
+ ele é o left*/
  #bg{
      grid-area: left;
  
-     background: url('/assets/home-bg-img.svg') no-repeat top/contain;
-     
+     background: url('/assets/home-bg-img.svg') no-repeat top/contain; 
  }
- 
+  /* quem ele é no grid-template-area?: 
+ ele é o right */
  main{
      grid-area: right;
  
      display: flex;
      align-items: center;
  }
- 
+ /* utilizando sempre a div dentro 
+ do main, para permanecer dinâmico */
  main .container{    
      width: min(36.3rem, 100%);
  }
@@ -43,8 +50,7 @@
      border: .2rem solid var(--grey-blue);
      padding: 0 1.6rem;
      /* height do padding */
-     height: 5rem;
-     border-radius: 0.8rem;
+
       
  }
 
