@@ -49,8 +49,11 @@
  input{
      border: .2rem solid var(--grey-blue);
      padding: 0 1.6rem;
-     /* height do padding */
+     /* height do padding */ 
+ }
 
-      
+ input, button, .button{
+     width: 100%;
+     margin-bottom: 0.8rem;
  }
 
