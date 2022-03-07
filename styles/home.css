@@ -20,7 +20,7 @@
  ele é o left*/
  #bg{
      grid-area: left;
- 
+
      background: url('/assets/home-bg-img.svg') no-repeat top/contain; 
  }
   /* quem ele é no grid-template-area?: 
@@ -30,6 +30,7 @@
  
      display: flex;
      align-items: center;
+     margin-top: -4.0rem;
  }
  /* utilizando sempre a div dentro 
  do main, para permanecer dinâmico */
@@ -56,4 +57,5 @@
      width: 100%;
      margin-bottom: 0.8rem;
  }
+
 
