@@ -20,8 +20,9 @@
  ele é o left*/
  #bg{
      grid-area: left;
-
-     background: url('/assets/home-bg-img.svg') no-repeat top/contain; 
+     background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+     background-position-x: -8rem;
+     background-position-y: -2rem;
  }
   /* quem ele é no grid-template-area?: 
  ele é o right */
@@ -58,4 +59,62 @@
      margin-bottom: 0.8rem;
  }
 
+/* separator line */
+/* separando subdivs dentro dentro de
+outra div */
+ .separator{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
 
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+    background: var(--grey-blue);
+    width: 100%;
+    height: 1px;
+}
+.separator div:nth-child(2){
+    font-family: 'Poppins', sans-serif;
+    color: var(--grey-blue);
+    margin: 0 1.34rem;
+    font-weight: 400;
+    line-height: 0;
+}
+
+/* Buttom entrar na sala */
+button > img
+{
+    margin: 0.8rem;
+    /* justify-content: space-between; */
+
+}
+
+/* Buttom Criar sala */
+.button >img
+{
+    margin: 0.8rem;
+}
+
+/* ball top and ball button */
+.ball{
+    width: 21.2rem;
+    height: 21.2rem;
+    background: var(--blue);
+    border-radius: 50%;
+    opacity: 0.1;
+
+    position: fixed;
+}
+.ball.top{
+    width: 70.2rem;
+    height: 63.2rem;
+    top: -45rem;
+    right: -43.6rem;
+
+}
+.ball.button{
+bottom: -16rem;
+right: 5.6rem;
+}

@@ -86,7 +86,7 @@ button:hover, .button:hover{
 
 button > img
 .button > img{
-    margin-right: 1rem;
+    margin-right: 2rem;
     width: 2rem;
 }
 
@@ -95,6 +95,7 @@ button.outlined,
     background: var(--white);
     color: var(--blue);
     border: .2rem solid var(--blue);
+    
 }
 
 .content header{
@@ -104,5 +105,6 @@ button.outlined,
 
 
 .content header img{
-    width: 16.7rem;
+    width: 12.7rem;
+    
 }
