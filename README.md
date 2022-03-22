@@ -8,12 +8,6 @@ Tecnologias usadas:
 
 - HTML
 - CSS
-- JavaScript
-- NodeJS
-- EJS
-- Express
-- SQLite
-
 
 ## 💻 Project
 
