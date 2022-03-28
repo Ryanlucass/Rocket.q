@@ -51,8 +51,8 @@ o nome da página com a tag relacionado */
     border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
     border-radius: 0 .8rem .8rem .8rem;
-
-    margin-bottom: 1.6rem;
+    /* margin-bottom: 1.6rem; */
+    margin: 0.8rem;
 }
 
 #question-form textarea{
@@ -93,4 +93,52 @@ o nome da página com a tag relacionado */
 #question-form form footer button{
     height: auto;
     padding: 2rem;
+}
+
+/********* Questions **********/
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper{
+    background: var(--light-blue);
+    margin: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+    
+}
+
+.question-wrapper .actions > a > img{
+    margin: .8rem;
+}
+
+.question-wrapper .question > p{
+    margin: 1.4rem;
+}
+/* outro tipo de seletor que pode ser utilizado */
+.question-wrapper .actions > a + a{
+    margin-left: 2.4rem;
+}
+
+/********* question-wrappers read **********/
+.question-wrapper.read{
+    background: var(--grey-med);
 }
