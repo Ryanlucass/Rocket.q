@@ -5,10 +5,11 @@ o nome da página com a tag relacionado */
 }
 
 #room header{
-    width: 100%;
+    width: 98.6%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: .8rem;
 }
 
 #room header .buttons{
@@ -38,6 +39,7 @@ o nome da página com a tag relacionado */
 /* question form */
 
 #question-form h2{
+    margin-left: 0.8rem;
     font-family: 'Poppins', sans-serif;
     font-size: 2.8rem;
     font-weight: 700;
@@ -111,7 +113,7 @@ o nome da página com a tag relacionado */
 
 .question-wrapper .question-content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .question-wrapper .actions{
@@ -123,7 +125,7 @@ o nome da página com a tag relacionado */
 .question-wrapper .actions > a{
     display: flex;
     align-items: center;
-    
+
 }
 
 .question-wrapper .actions > a > img{
@@ -136,6 +138,16 @@ o nome da página com a tag relacionado */
 /* outro tipo de seletor que pode ser utilizado */
 .question-wrapper .actions > a + a{
     margin-left: 2.4rem;
+}
+
+.question-wrapper .question-content p{
+    /* //margin-left: 1,6rem; */
+    /* ao escrever uma palavra muito grande, o layout não é quebrado */
+    display: flex;
+    word-break: break-word;
+    align-items: center;
+    min-height: 5.5rem;
+
 }
 
 /********* question-wrappers read **********/
