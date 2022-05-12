@@ -1,0 +1,24 @@
+{
+  "name": "rocket.q",
+  "version": "1.0.0",
+  "description": "Projetos desenvolvido para gerenciar perguntas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryanlucass/Rocket.q.git"
+  },
+  "keywords": [],
+  "author": "Lucas Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryanlucass/Rocket.q/issues"
+  },
+  "homepage": "https://github.com/Ryanlucass/Rocket.q#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
