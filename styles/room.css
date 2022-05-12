@@ -1,0 +1,160 @@
+/* como o header já está estilizado (global.css), é necessário que coloque também
+o nome da página com a tag relacionado */
+.content{
+    max-width: min(112rem,90%);
+}
+
+#room header{
+    width: 98.6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: .8rem;
+}
+
+#room header .buttons{
+    display: flex;
+}
+
+#room header .buttons .button:nth-child(1){
+    margin-right: 0.8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img{
+    margin-left: 1rem;
+    width: 2rem;
+}
+
+#room header .buttons .button:nth-child(2){
+    padding: 1.2rem 3.2rem;
+}
+
+#room header .buttons .button:nth-child(2) img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+/* question form */
+
+#question-form h2{
+    margin-left: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 4.2rem;
+
+    margin-bottom: 2.4rem;
+}
+
+#question-form form{
+    border: .2rem solid var(--grey-blue);
+    padding: 1.6rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    /* margin-bottom: 1.6rem; */
+    margin: 0.8rem;
+}
+
+#question-form textarea{
+    /* elemento para tirar o tamanho manual */
+    resize: none;
+    background: transparent;
+
+    /* não ficar as bordas ao selecionar */
+    width: 100%;
+    outline: none;
+}
+
+#question-form form textarea::placeholder{
+    color: var(--grey-blue);
+}
+
+
+#question-form form footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-form form footer > div{
+    color: var(--icons-details);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#question-form form footer > div img{
+    margin-right: 0.8rem;
+}
+
+#question-form form footer button{
+    height: auto;
+    padding: 2rem;
+}
+
+/********* Questions **********/
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper{
+    background: var(--light-blue);
+    margin: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+
+}
+
+.question-wrapper .actions > a > img{
+    margin: .8rem;
+}
+
+.question-wrapper .question > p{
+    margin: 1.4rem;
+}
+/* outro tipo de seletor que pode ser utilizado */
+.question-wrapper .actions > a + a{
+    margin-left: 2.4rem;
+}
+
+.question-wrapper .question-content p{
+    /* //margin-left: 1,6rem; */
+    /* ao escrever uma palavra muito grande, o layout não é quebrado */
+    display: flex;
+    word-break: break-word;
+    align-items: center;
+    min-height: 5.5rem;
+
+}
+
+/********* question-wrappers read **********/
+.question-wrapper.read{
+    background: var(--grey-med);
+}
+
+.question-wrapper.read .question-content .user{
+    background: var(--grey-blue);
+}
